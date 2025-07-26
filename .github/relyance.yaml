@@ -1,0 +1,8 @@
+repo_name: geetha-automation-test/node-js-sample
+include:
+  - "**/*.js"
+  - "**/*.json"
+exclude:
+  - "node_modules/**"
+  - "coverage/**"
+scan_level: full
