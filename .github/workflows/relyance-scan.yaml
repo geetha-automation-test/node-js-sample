@@ -11,4 +11,4 @@ jobs:
     with:
       config_path: '.github/relyance.yaml'
     secrets:
-      API_KEY: ${{ secrets.RELYANCE_API_KEY }}
+      RELYANCE_API_KEY: ${{ secrets.RELYANCE_API_KEY }}
