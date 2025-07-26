@@ -1,0 +1,14 @@
+name: Relyance Scan
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  run-relyance-scan:
+    uses: Relyance/relyance/.github/workflows/relyance-scan.yaml@main
+    with:
+      config_path: '.github/relyance.yaml'
+    secrets:
+      API_KEY: ${{ secrets.RELYANCE_API_KEY }}
